@@ -17,13 +17,13 @@ NFS מאפשר שיתוף קבצים בין מחשבים ברשת. מחשבים 
 ## דוגמה לצפייה בתיקיות משותפות
 
 ```bash
-showmount -e 10.10.10.251
+showmount -e 10.10.10.10
 ```
 
 פלט לדוגמה:
 
 ```
-Export list for 10.10.10.251:
+Export list for 10.10.10.10:
 /home/ubuntu/sharedfolder *
 /tmp                      *
 /home/backup              *
@@ -50,7 +50,7 @@ cat /etc/exports
 כדי "להרים" תיקיה מרוחקת למערכת שלך:
 
 ```bash
-mount -o rw 10.10.250.195:/home/ubuntu/sharedfolder /mnt/pt
+mount -o rw 10.10.10.10:/home/ubuntu/sharedfolder /mnt/pt
 ```
 
 * `-o rw` מאפשר גישה לקריאה וכתיבה.
